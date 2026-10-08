@@ -23,11 +23,11 @@ jobs:
       - name: Compile C++ to EXE
         shell: msys2 {0}
         run: |
-          g++ -std=c++17 -O2 -static easy.cpp -o easy.exe
+          g++ -std=c++17 -O2 -static easy.cpp -o Vivi.exe
 
       - name: Upload EXE
         uses: actions/upload-artifact@v4
         with:
-          name: compiled-exe
+          name: Vivi
           path: Vivi.exe
           if-no-files-found: error
